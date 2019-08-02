@@ -1,6 +1,12 @@
 # react-use-lazy-load-image
 
-Add image lazy loading to your React app with ease
+> Add image lazy loading to your React app with ease
+
+`react-use-lazy-load-image` uses the [`IntersectionObserver`](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) to provide a performant solution to lazy loading images that doesn't involve scroll event listeners. The `IntersectionObserver` API is still quite new so older browsers may not support this, however there are some good polyfills available for these use cases.
+
+`react-use-lazy-load-image` is super light weight so won't add any extra bulk to your app.
+
+As the name suggests `react-use-lazy-load-image` uses React Hooks, so you need to be using React function components to use this library.
 
 ### Usage
 
