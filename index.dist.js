@@ -23,12 +23,10 @@ function useLazyLoadImage() {
       debug = _ref$debug === void 0 ? false : _ref$debug;
 
   function log() {
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
+    var _console;
 
     // eslint-disable-next-line no-console
-    if (debug) console.log(args);
+    if (debug) (_console = console).log.apply(_console, arguments);
   }
 
   function loadImage(image) {

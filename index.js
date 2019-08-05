@@ -9,7 +9,7 @@ export default function useLazyLoadImage({
 } = {}) {
   function log(...args) {
     // eslint-disable-next-line no-console
-    if (debug) console.log(args);
+    if (debug) console.log(...args);
   }
 
   function loadImage(image) {
