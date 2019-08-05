@@ -9,8 +9,9 @@ var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-function useLazyLoadImage(_ref) {
-  var _ref$imageAttribute = _ref.imageAttribute,
+function useLazyLoadImage() {
+  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      _ref$imageAttribute = _ref.imageAttribute,
       imageAttribute = _ref$imageAttribute === void 0 ? '[data-img-src]' : _ref$imageAttribute,
       _ref$imageAttributeKe = _ref.imageAttributeKey,
       imageAttributeKey = _ref$imageAttributeKe === void 0 ? 'imgSrc' : _ref$imageAttributeKe,

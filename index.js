@@ -6,7 +6,7 @@ export default function useLazyLoadImage({
   rootMargin = '200px 0px',
   threshold = 0.01,
   debug = false,
-}) {
+} = {}) {
   function log(...args) {
     // eslint-disable-next-line no-console
     if (debug) console.log(args);
