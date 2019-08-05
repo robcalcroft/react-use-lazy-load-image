@@ -1,4 +1,4 @@
-# react-use-lazy-load-image
+# react-use-lazy-load-image :sunrise: :zap:
 
 > Add image lazy loading to your React app with ease
 
