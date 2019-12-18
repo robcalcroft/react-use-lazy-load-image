@@ -20,6 +20,7 @@ export default function useLazyLoadImage({
     image.src = imageUrlToLoad;
   }
 
+  // eslint-disable-next-line consistent-return
   React.useEffect(() => {
     const images = document.querySelectorAll(imageAttribute);
     if (!window.IntersectionObserver) {
@@ -45,6 +46,9 @@ export default function useLazyLoadImage({
         { rootMargin, threshold }
       );
       images.forEach(image => observer.observe(image));
+      return () => {
+        images.forEach(image => observer.unobserve(image));
+      };
     }
   }, dependencies);
 }

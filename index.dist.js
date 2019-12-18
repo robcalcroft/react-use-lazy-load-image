@@ -36,7 +36,8 @@ function useLazyLoadImage() {
     log('Loading image url', imageUrlToLoad); // eslint-disable-next-line no-param-reassign
 
     image.src = imageUrlToLoad;
-  }
+  } // eslint-disable-next-line consistent-return
+
 
   _react["default"].useEffect(function () {
     var images = document.querySelectorAll(imageAttribute);
@@ -63,6 +64,11 @@ function useLazyLoadImage() {
       images.forEach(function (image) {
         return observer.observe(image);
       });
+      return function () {
+        images.forEach(function (image) {
+          return observer.unobserve(image);
+        });
+      };
     }
   }, dependencies);
 }
