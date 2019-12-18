@@ -1,6 +1,6 @@
 {
   "name": "react-use-lazy-load-image",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Add image lazy loading to your React app with ease",
   "main": "index.dist.js",
   "repository": "git@github.com:robcalcroft/react-use-lazy-load-image.git",
