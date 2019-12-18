@@ -20,7 +20,9 @@ function useLazyLoadImage() {
       _ref$threshold = _ref.threshold,
       threshold = _ref$threshold === void 0 ? 0.01 : _ref$threshold,
       _ref$debug = _ref.debug,
-      debug = _ref$debug === void 0 ? false : _ref$debug;
+      debug = _ref$debug === void 0 ? false : _ref$debug,
+      _ref$dependencies = _ref.dependencies,
+      dependencies = _ref$dependencies === void 0 ? [] : _ref$dependencies;
 
   function log() {
     var _console;
@@ -62,5 +64,5 @@ function useLazyLoadImage() {
         return observer.observe(image);
       });
     }
-  }, []);
+  }, dependencies);
 }

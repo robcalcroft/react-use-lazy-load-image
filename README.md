@@ -18,13 +18,14 @@ Now as your users scroll down the page the images will load just in time.
 
 ### Arguments
 
-| Argument name     | Default value    | Description                                                                                              |
-|-------------------|------------------|----------------------------------------------------------------------------------------------------------|
-| imageAttribute    | `'[data-img-src]'` | The query passed to `document.querySelectorAll` to grab all lazy load-able images on the page            |
-| imageAttributeKey | `'imgSrc'`         | The camel-cased key to pull the `data-img-src` out of the image element                                  |
+| Argument name     | Default value     | Description                                                                                              |
+|-------------------|-------------------|----------------------------------------------------------------------------------------------------------|
+| imageAttribute    | `'[data-img-src]'`| The query passed to `document.querySelectorAll` to grab all lazy load-able images on the page            |
+| imageAttributeKey | `'imgSrc'`        | The camel-cased key to pull the `data-img-src` out of the image element                                  |
 | rootMargin        | `'200px 0px'`     | https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options |
-| threshold         | `0.01 `            | https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options |
-| debug             | `false`          | When set to `true` some useful messages will get logged to the console                                   |
+| threshold         | `0.01 `           | https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options |
+| debug             | `false`           | When set to `true` some useful messages will get logged to the console                                   |
+| dependencies      | `[]`              | React useEffect dependency array, used for re-running this logic if the component re-renders and the `img` references change ([read more about conditionally firing an effect](https://reactjs.org/docs/hooks-reference.html#conditionally-firing-an-effect)) |
 
 
 ### Example

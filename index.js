@@ -6,6 +6,7 @@ export default function useLazyLoadImage({
   rootMargin = '200px 0px',
   threshold = 0.01,
   debug = false,
+  dependencies = [],
 } = {}) {
   function log(...args) {
     // eslint-disable-next-line no-console
@@ -45,5 +46,5 @@ export default function useLazyLoadImage({
       );
       images.forEach(image => observer.observe(image));
     }
-  }, []);
+  }, dependencies);
 }
